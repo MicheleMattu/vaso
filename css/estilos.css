@@ -1,0 +1,27 @@
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+.loader{
+	width: 62px;
+	height: 152px;
+	display: inline-block;
+	position: relative;
+	border: 5px solid red;
+	animation: fill 5s linear infinite alternate;
+	color: yellow;
+	border-radius: 0 0 4px 4px;
+	transform: perspective(140px) rotateX(-45deg);
+}
+
+@keyframes fill {
+	0% {
+		box-shadow: 0 0 inset;
+	}
+	100%{
+		box-shadow: 0 -152px inset;
+	}
+}
